@@ -1,0 +1,47 @@
+---
+import { SITE } from "~/config";
+import "~/styles/global.css";
+
+export interface Props {
+  title?: string;
+  author?: string;
+  description?: string;
+}
+
+const {
+  title = SITE.title,
+  author = SITE.author,
+  description = SITE.desc,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, SITE.website);
+---
+
+<html lang="en" class="theme-cv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+  </head>
+  <body class="my-0 bg-stone-50 dark:bg-slate-900 sm:my-14">
+    <main id="main" class="container mx-auto flex justify-center">
+      <section class="p-10 border bg-white shadow rounded">
+        <slot name="main" />
+      </section>
+    </main>
+  </body>
+</html>

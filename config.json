@@ -1,48 +1,46 @@
 {
     "config": [
         {
-            "name": "Avatar",
+            "name": "Author",
             "options": [
                 {
                     "type": "text",
-                    "key": "avatar",
-                    "value": "",
-                    "placeholder": "https://(100*100)"
+                    "key": "author",
+                    "value": "11",
+                    "placeholder": "Author name"
                 }
             ]
         },
         {
-            "name": "Name of configuration item",
+            "name": "Desc",
+            "options": [
+                {
+                    "type": "text",
+                    "key": "desc",
+                    "value": "",
+                    "placeholder": "Enter the desc."
+                }
+            ]
+        },
+        {
+            "name": "Title",
+            "options": [
+                {
+                    "type": "text",
+                    "key": "title",
+                    "value": "",
+                    "placeholder": "Enter the title."
+                }
+            ]
+        },
+        {
+            "name": "Textarea Control",
             "options": [
                 {
                     "type": "textarea",
                     "key": "",
-                    "value": [
-                        {
-                            "type": "doc",
-                            "content": [
-                                {
-                                    "type": "paragraph",
-                                    "content": [
-                                        {
-                                            "type": "text",
-                                            "text": "Example "
-                                        },
-                                        {
-                                            "type": "text",
-                                            "marks": [
-                                                {
-                                                    "type": "bold"
-                                                }
-                                            ],
-                                            "text": "Text"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "placeholder": ""
+                    "value": "",
+                    "placeholder": "content"
                 }
             ]
         }
