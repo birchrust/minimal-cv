@@ -5,15 +5,15 @@ import config from "config.json";
 const author = config.config[0].options[0].value;
 const desc = config.config[1].options[0].value;
 const title = config.config[2].options[0].value;
-const herf = "https://astro.build/";
+const herf = "https://www.4everland.org/";
 
 export const SITE: Site = {
-  website: "https://astro.build/",
-  author: author ? author : "birch",
+  website: "https://www.4everland.org/",
+  author: author ? author : "4everland",
   desc: desc
     ? desc
-    : "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: title ? title : "AstroPaper",
+    : "4EVERLAND is a Web 3.0 cloud computing platform that integrates storage, computing, and network as its core capabilities. It aims to help users make a smooth leap from Web 2.0 to Web 3.0 and become the infrastructure for millions of Web 3.0 developers and applications.",
+  title: title ? title : "CV",
 };
 
 export const SOCIALS: SocialObjects = [

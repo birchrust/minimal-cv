@@ -6,7 +6,7 @@
                 {
                     "type": "text",
                     "key": "author",
-                    "value": "11",
+                    "value": "",
                     "placeholder": "Author name"
                 }
             ]
