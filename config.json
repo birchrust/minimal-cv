@@ -1,0 +1,26 @@
+{
+    "config": [
+        {
+            "name": "Avatar",
+            "options": [
+                {
+                    "type": "text",
+                    "key": "avatar",
+                    "value": "",
+                    "placeholder": "https://(100*100)"
+                }
+            ]
+        },
+        {
+            "name": "Name of configuration item",
+            "options": [
+                {
+                    "type": "textarea",
+                    "key": "",
+                    "value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ]
+}
