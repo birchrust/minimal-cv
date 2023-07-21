@@ -40,7 +40,7 @@
                     "type": "textarea",
                     "key": "",
                     "value": "",
-                    "placeholder": "content"
+                    "placeholder": "Visit 'https://iliyazelenko.github.io/tiptap-vuetify-demo/#/preview' to generate HTML tags"
                 }
             ]
         }
