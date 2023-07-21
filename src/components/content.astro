@@ -9,16 +9,7 @@
 
   import config from "../../config.json";
   const content = config.config[1].options[0].value[0];
-
-  new Editor({
-    element: document.querySelector(".element")!,
-    extensions: [StarterKit],
-    editorProps: {
-      attributes: {
-        class: "prose prose-sm sm:prose lg:prose-lg m-6 focus:outline-none space-y-4",
-      },
-    },
-    content: `
+  const DEFAULT_CONTENT = `
   <h2>
     Hi there,
   </h2>
@@ -47,6 +38,17 @@
     <br />
     — Mom
   </blockquote>
-`,
+`;
+
+  new Editor({
+    element: document.querySelector(".element")!,
+    extensions: [StarterKit],
+    editorProps: {
+      attributes: {
+        class:
+          "prose prose-sm sm:prose lg:prose-lg m-6 focus:outline-none space-y-4",
+      },
+    },
+    content: content ? content : DEFAULT_CONTENT,
   });
 </script>
