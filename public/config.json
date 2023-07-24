@@ -1,0 +1,48 @@
+{
+    "config": [
+        {
+            "name": "Author",
+            "options": [
+                {
+                    "type": "text",
+                    "key": "author",
+                    "value": "",
+                    "placeholder": "Author name"
+                }
+            ]
+        },
+        {
+            "name": "Desc",
+            "options": [
+                {
+                    "type": "text",
+                    "key": "desc",
+                    "value": "",
+                    "placeholder": "Enter the desc."
+                }
+            ]
+        },
+        {
+            "name": "Title",
+            "options": [
+                {
+                    "type": "text",
+                    "key": "title",
+                    "value": "",
+                    "placeholder": "Enter the title."
+                }
+            ]
+        },
+        {
+            "name": "Content padding area",
+            "options": [
+                {
+                    "type": "textarea",
+                    "key": "",
+                    "value": "",
+                    "placeholder": "Visit 'https://iliyazelenko.github.io/tiptap-vuetify-demo/#/preview' to generate HTML tags"
+                }
+            ]
+        }
+    ]
+}
