@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Tiptap from "~/components/Tiptap";
 
-
 export default function Home() {
   return (
     <>
@@ -21,4 +20,10 @@ export default function Home() {
       </main>
     </>
   );
+}
+
+export function getStaticProps() {
+  return {
+    props: {},
+  };
 }
