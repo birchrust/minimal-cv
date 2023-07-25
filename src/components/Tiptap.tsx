@@ -1,5 +1,3 @@
-"use client";
-
 import StarterKit from "@tiptap/starter-kit";
 import data from "../../public/config.json";
 import { useEditor, EditorContent } from "@tiptap/react";
