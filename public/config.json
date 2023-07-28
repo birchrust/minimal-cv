@@ -39,7 +39,7 @@
                 {
                     "type": "textarea",
                     "key": "",
-                    "value": "",
+                    "value": "<p>test</p>",
                     "placeholder": "Visit 'https://iliyazelenko.github.io/tiptap-vuetify-demo/#/preview' to generate HTML tags"
                 }
             ]
